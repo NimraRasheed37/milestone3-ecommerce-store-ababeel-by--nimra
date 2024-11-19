@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+
+.navlinks{
+  @apply
+  py-1 px-2 
+  rounded-md
+ hover:bg-red-700
+ hover:text-white 
+  hover:shadow-md;
+}
+
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
