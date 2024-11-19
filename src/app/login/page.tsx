@@ -6,10 +6,12 @@ export default function Login() {
         <>
         <div className="lg:flex lg:justify-between lg:items-center w-full h-screen">
           <div className="w-full">
-            <img 
+            <Image 
             className="hidden lg:block lg:w-full md:h-screen"
             src="/img/login-page.jpg"
             alt="booksImage"
+            width={500}
+            height={50}
             />
           </div>
                 <div className="w-full flex flex-col items-center justify-center h-screen ">
@@ -18,7 +20,7 @@ export default function Login() {
                   src="/img/logo/Ababeel (4).png"
                   className="mb-8 "
                   alt="logo"
-                  width={200}  
+                  width={150}  
                   height={50}
                   />
                   </Link>

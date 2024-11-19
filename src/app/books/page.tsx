@@ -5,14 +5,15 @@ import { useEffect, useState } from "react";
 import Categories from "@/components/Categories";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
-import Link from "next/link";
 
-function shuffleArray(array:any) {
+import Image from "next/image";
+
+function shuffleArray(array) {
   return array.sort(() => Math.random() - 0.5);
 }
 
 export default function Books() {
-  const books = [
+  const book = [
     {
       title: 'Harry Potter and the Sorcerers Stone',
       author: 'J.K.Rowling',
@@ -129,11 +130,11 @@ export default function Books() {
     
   ];
 
-  const [shuffledBooks, setShuffledBooks] = useState(books);
+  const [shuffledBooks, setShuffledBooks] = useState(book);
 
   // Shuffle books only on the client side
   useEffect(() => {
-    setShuffledBooks(shuffleArray([...books]));
+    setShuffledBooks(shuffleArray([...book]));
   }, []);
   return (
     <>
@@ -146,12 +147,12 @@ export default function Books() {
           Popular Books
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 ">
-          {shuffledBooks.map((book:any, index:any) => (
+          {shuffledBooks.map((book, index) => (
             <div
               key={index}
               className="bg-white rounded-lg shadow-red-900 shadow-md overflow-hidden transition-transform transform hover:scale-105"
             >
-              <img
+              <Image
                 src={book.image}
                 alt={book.title}
                 className="w-full h-48 object-contain"

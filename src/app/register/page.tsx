@@ -9,9 +9,9 @@ export default function Register() {
                   <Link href={"/"} /*target="_blank"*/ >
                   <Image
                   src="/img/logo/Ababeel (4).png"
-                  className="mb-8 "
+                  className="my-2 "
                   alt="logo"
-                  width={200}  
+                  width={150}  
                   height={50}
                   />
                   </Link>
@@ -61,10 +61,12 @@ export default function Register() {
         </form>
       </div>
       <div className="w-full">
-            <img 
+            <Image 
             className="hidden lg:block lg:w-full md:h-screen"
             src="/img/login-page.jpg"
             alt="booksImage"
+            width={500}
+            height={50}
             />
           </div>
         </div>
