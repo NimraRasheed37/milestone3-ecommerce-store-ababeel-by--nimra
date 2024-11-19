@@ -152,7 +152,7 @@ export default function Books() {
               key={index}
               className="bg-white rounded-lg shadow-red-900 shadow-md overflow-hidden transition-transform transform hover:scale-105"
             >
-              <Image
+              <img
                 src={book.image}
                 alt={book.title}
                 className="w-full h-48 object-contain"
