@@ -63,7 +63,7 @@ export default function BooksCards() {
   ];
 
   return (
-    <div className="p-8 mx-10 bg-gray-50">
+    <div className="p-8 lg:mx-10 bg-gray-50">
       <h2 className="text-2xl font-bold text-gray-800 text-center mb-6">
         Popular Books
       </h2>
