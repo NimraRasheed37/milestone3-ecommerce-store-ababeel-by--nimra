@@ -19,6 +19,7 @@ function shuffleArray(array: Book[]): Book[] {
 }
 
 export default function Books() {
+
   const book: Book[] = [
     {
       title: 'Harry Potter and the Sorcerer\'s Stone',
