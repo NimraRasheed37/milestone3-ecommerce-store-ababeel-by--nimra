@@ -24,7 +24,7 @@ export default function Books() {
     {
       title: 'Harry Potter and the Sorcerer\'s Stone',
       author: 'J.K. Rowling',
-      image: ''/img/books/hp-1.jpg'',
+      image: '/img/books/hp-1.jpg',
       price: '1000 PKR',
       category: "English",
     },
